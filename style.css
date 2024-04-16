@@ -1,0 +1,34 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+#arena {
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    position: relative;
+    overflow: hidden;
+}
+
+#trap {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: blue;
+}
+
+[data-circle] {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: yellow;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+}
